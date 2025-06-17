@@ -10,6 +10,7 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--Contiene el logo, la nav, buscador y boton de inicio-->
@@ -80,49 +81,69 @@
 
     <!--Carrusel principal -->
     <article>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carrusel1.jpg" class="d-block w-100" alt="..." />
+      <div class="container">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/Carrusel1.jpg"
+                class="d-block w-100 rounded-3"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/carrusel2.jpg"
+                class="d-block w-100 rounded-3"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/carrusel3.jpg"
+                class="d-block w-100 rounded-3"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/carrusel4.jpg"
+                class="d-block w-100 rounded-3"
+                alt="..."
+              />
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="img/carrusel2.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel3.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel4.jpg" class="d-block w-100" alt="..." />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </article>
 
     <!--Grid de posters de pelicula, con cards-->
     <section>
-      <h1>PELÍCULAS EN CARTELERA</h1>
       <div class="container">
-        <div class="row">
-          <div class="col-3">
-            <div class="card">
+        <h1 class="text-start my-4">PELÍCULAS EN CARTELERA</h1>
+
+        <div class="row g-4">
+          <!-- Tarjeta 1 -->
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera1.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">COMO ENTRENAR A TU DRAGON</h5>
@@ -130,138 +151,102 @@
                   3D · 4D E-MOTION · COMFORT · D-BOX · XD DIGITAL · 2D · PREMIUM
                   CLASS
                 </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
+
+          <!-- Tarjeta 2 -->
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">LILO Y STITCH</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  lead-in to additional content.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
+
+          <!-- Tarjeta 3 -->
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">DESTINO FINAL LAZOS DE SANGRE</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  lead-in to additional content.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
+
+          <!-- Tarjeta 4 -->
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera4.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">MISION IMPOSIBLE LA SENTENCIA FINAL</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  lead-in to additional content.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-3">
-            <div class="card">
+
+          <!-- Tarjeta 5 -->
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera5.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">BAILARINA</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  lead-in to additional content.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
+
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera6.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">DAN DA DAN EVIL EYE</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  lead-in to additional content.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
+
+          <!-- Tarjeta 7 -->
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera7.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">GATILLERO</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  lead-in to additional content.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
+
+          <!-- Tarjeta 8 -->
+          <div class="col-6 col-md-3">
+            <div class="card h-100 rounded-3">
               <img src="img/Cartelera8.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">EL ESQUEMA FENICIO</h5>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  lead-in to additional content.
                 </p>
               </div>
             </div>
@@ -272,100 +257,151 @@
 
     <!--Grid de tarjetas de preventa-->
     <section>
-      <h1>PELÍCULAS EN PREVENTA</h1>
       <div class="container">
-        <div class="overflow-x-scroll">
-          <div class="row flex-nowrap">
-            <div class="col-3">
-              <div class="card">
-                <img src="img/preventa1.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">F1 LA PELICULA</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
-                    >
-                  </p>
+        <h1 class="text-start my-4">PELÍCULAS EN PREVENTA</h1>
+        <div class="overflow-x-auto">
+          <div class="row flex-nowrap g-3">
+            <!--Tarjeta 1-->
+            <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 rounded-3 bg-transparent">
+                <div class="position-relative">
+                  <img
+                    src="img/preventa1.jpg"
+                    class="card-img-top rounded-top-3"
+                    alt="Formula 1 La Pelicula"
+                  />
+                  <span
+                    class="badge text-bg-dark position-absolute top-0 end-0 m-2"
+                    >2h 23m</span
+                  >
+                </div>
+                <div class="card-body px-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title text-uppercase fs-6 mb-0 text-truncate">
+                      F1 LA PELICULA
+                    </h5>
+                    <span class="badge bg-success rounded-pill">ATP</span>
+                  </div>
+                  <p class="card-text text-body-secondary mt-1 small">2D</p>
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="card">
-                <img src="img/preventa2.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">MILEY CYRUS SOMETHING BEAUTIFUL</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
-                    >
-                  </p>
+
+            <!--Tarjeta 2-->
+            <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 rounded-3 bg-transparent">
+                <div class="position-relative">
+                  <img
+                    src="img/preventa2.jpg"
+                    class="card-img-top rounded-top-3"
+                    alt="Roger Waters The Movie"
+                  />
+                  <span
+                    class="badge text-bg-dark position-absolute top-0 end-0 m-2"
+                    >2h 23m</span
+                  >
+                </div>
+                <div class="card-body px-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title text-uppercase fs-6 mb-0">
+                      MILEY CYRUS SOMETHING BEAUTIFUL
+                    </h5>
+                    <span class="badge bg-success rounded-pill">ATP</span>
+                  </div>
+                  <p class="card-text text-body-secondary mt-1 small">2D</p>
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="card">
-                <img src="img/preventa3.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">ELIO</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
-                    >
-                  </p>
+
+            <!--Tarjeta 3-->
+            <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 rounded-3 bg-transparent">
+                <div class="position-relative">
+                  <img
+                    src="img/preventa3.jpg"
+                    class="card-img-top rounded-top-3"
+                    alt="Roger Waters The Movie"
+                  />
+                  <span
+                    class="badge text-bg-dark position-absolute top-0 end-0 m-2"
+                    >2h 23m</span
+                  >
+                </div>
+                <div class="card-body px-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title text-uppercase fs-6 mb-0">ELIO</h5>
+                    <span class="badge bg-success rounded-pill">ATP</span>
+                  </div>
+                  <p class="card-text text-body-secondary mt-1 small">2D</p>
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="card">
-                <img src="img/preventa4.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">EXTERMINIO LA EVOLUCION</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
-                    >
-                  </p>
+
+            <!--Tarjeta 4-->
+            <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 rounded-3 bg-transparent">
+                <div class="position-relative">
+                  <img
+                    src="img/preventa4.jpg"
+                    class="card-img-top rounded-top-3"
+                    alt="Roger Waters The Movie"
+                  />
+                  <span
+                    class="badge text-bg-dark position-absolute top-0 end-0 m-2"
+                    >2h 23m</span
+                  >
+                </div>
+                <div class="card-body px-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title text-uppercase fs-6 mb-0">
+                      EXTERMINIO LA EVOLUCION
+                    </h5>
+                    <span class="badge bg-success rounded-pill">ATP</span>
+                  </div>
+                  <p class="card-text text-body-secondary mt-1 small">2D</p>
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="card">
-                <img src="img/preventa5.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">ROGER WATERS THIS IS NOT A DRILL</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary"
-                      >Last updated 3 mins ago</small
-                    >
-                  </p>
+
+            <!--Tarjeta 5-->
+            <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 rounded-3 bg-transparent">
+                <div class="position-relative">
+                  <img
+                    src="img/preventa5.jpg"
+                    class="card-img-top rounded-top-3"
+                    alt="Roger Waters The Movie"
+                  />
+                  <span
+                    class="badge text-bg-dark position-absolute top-0 end-0 m-2"
+                    >2h 23m</span
+                  >
+                </div>
+                <div class="card-body px-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title text-uppercase fs-6 mb-0">
+                      EXTERMINIO LA EVOLUCION
+                    </h5>
+                    <span class="badge bg-success rounded-pill">ATP</span>
+                  </div>
+                  <p class="card-text text-body-secondary mt-1 small">2D</p>
                 </div>
               </div>
             </div>
+
+
+
+
           </div>
         </div>
       </div>
@@ -376,22 +412,108 @@
       <h1>DISFRUTÁ EN CINEMARK</h1>
       <div class="container">
         <div class="overflow-x-scroll">
-            <div class="row flex-nowrap">
-                <div class="col-4"><img src="img/promo1.jpg" alt=""></div>
-                <div class="col-4"><img src="img/promo2.jpg" alt=""></div>
-                <div class="col-4"><img src="img/promo3.jpg" alt=""></div>
-                <div class="col-4"><img src="img/promo4.jpg" alt=""></div>
-                <div class="col-4"><img src="img/promo5.jpg" alt=""></div>
-                <div class="col-4"><img src="img/promo6.jpg" alt=""></div>
-                <div class="col-4"><img src="img/promo7.jpg" alt=""></div>
-                <div class="col-4"><img src="img/promo8.jpg" alt=""></div>
-            </div>
+          <div class="row flex-nowrap">
+            <div class="col-4"><img src="img/promo1.jpg" alt="" /></div>
+            <div class="col-4"><img src="img/promo2.jpg" alt="" /></div>
+            <div class="col-4"><img src="img/promo3.jpg" alt="" /></div>
+            <div class="col-4"><img src="img/promo4.jpg" alt="" /></div>
+            <div class="col-4"><img src="img/promo5.jpg" alt="" /></div>
+            <div class="col-4"><img src="img/promo6.jpg" alt="" /></div>
+            <div class="col-4"><img src="img/promo7.jpg" alt="" /></div>
+            <div class="col-4"><img src="img/promo8.jpg" alt="" /></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!--Footer con enlaces, logos de redes sociales e informacion legal-->
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              aria-label="Bootstrap"
+            >
+              <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <p class="text-body-secondary">© 2025</p>
+          </div>
+          <div class="col mb-3"></div>
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Oswald", sans-serif;
+    line-height: 120%;
+    font-weight: 400;
+    background-color: #12100D;
+}
+
+.card {
+    color: #FFFFFF;
+    background-color: #23211e;
+}
